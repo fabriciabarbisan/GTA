@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>GTA</title>
+</head>
+
+<body>
+    <p class="character-name">Lucia</p>
+    <img class="character" src="/img/lucia.png" alt="Lucia">
+
+    <div class="texts">
+        <p class="selection-title">Selecione o seu Personagem</p>
+        <h1>Não é só <br>um Jogo</h1>
+        <p class="selection-description">Escolha uma lenda do dev City. Ou tire uma selfie e vire uma.</p>
+    </div>
+
+    <div class="buttons">
+
+        <img onclick="selectCharacter('Lucia', '/img/lucia.png', '#ff3cac')" class="avatar" src="/img/lucia.png" alt="Lucia">
+
+        <img onclick="selectCharacter('Jason', '/img/jason.png', '#00b2c9')" class="avatar" src="/img/jason.png" alt="Jason">
+
+        <img onclick="selectCharacter('CJ', '/img/cj.png', '#7ed37e')" class="avatar" src="/img/cj.png" alt="CJ">
+
+        <label class="bg-camera">
+
+            <img class="camera" src="/img/camera-recolored.png" alt="Camera">
+
+            <input type="file" accept="image/*" hidden onchange="userPhoto(this)">
+
+        </label>
+    </div>
+
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="script.js"></script>
+</html>

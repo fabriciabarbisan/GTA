@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* Adicionado para garantir reset total */
+    font-family: "Bangers", system-ui;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Impede barras de rolagem indesejadas */
+}
+
+body {
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o conteúdo principal na base */
+    align-items: center;
+    position: relative;
+}
+
+/* Nome gigante atrás da personagem */
+.character-name {
+    font-size: 20vw; /* Usa o tamanho da largura da tela (Viewport Width) em vez de px fixo */
+    color: #ff3cac;
+    position: absolute;
+    top: 5%; /* Alinha baseado no topo da tela */
+    text-align: center;
+    width: 100%;
+    z-index: 1; /* Fica atrás da personagem */
+    line-height: 1;
+}
+
+/* Personagem principal */
+.character {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centralização perfeita independente da tela */
+    height: 85vh; /* Ocupa 85% da altura da tela do usuário, nunca mais que isso */
+    max-height: 800px; /* Limite máximo para telas ultra-grandes */
+    object-fit: contain;
+    z-index: 2; /* Fica à frente do nome */
+}
+
+/* Container para organizar os textos do lado esquerdo e botões embaixo */
+.texts {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 3;
+    max-width: 400px; /* Impede que o texto invada o meio da tela */
+}
+
+.selection-title {
+    font-size: 26px;
+    color: #ffd319;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 72px); /* Ajusta o tamanho da fonte dinamicamente */
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.selection-description {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Botões de seleção centralizados na base */
+.buttons {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 3;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Efeito visual ao passar o mouse */
+}
+
+.bg-camera {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffd319;
+    border: #533b01 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.camera {
+    width: 40px;
+    height: 40px;
+}
