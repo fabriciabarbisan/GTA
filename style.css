@@ -127,12 +127,12 @@ h1 {
 
     /* AJUSTE 2: Move o texto de seleção para cima dos botões e centraliza tudo */
     .texts {
-        bottom: 120px;       /* Joga o bloco de texto para cima dos botões */
-        left: 50%;
-        transform: translateX(-50%); /* Centraliza horizontalmente no celular */
-        width: 90%;          /* Garante margens nas laterais da tela */
+        bottom: 120px;   /* Aumenta a distância da base para ficar acima dos botões */
+        left: 20px;      /* Mantém alinhado à esquerda (ajustado para 20px para não colar na borda do celular) */
+        transform: none; /* Garante que o efeito de centralização do desktop não seja aplicado */
+        width: calc(100% - 40px); /* Ocupa a largura total descontando as margens laterais */
         max-width: 100%;
-        text-align: center;  /* Centraliza os títulos e descrições */
+        text-align: left; /* Garante que o texto continue alinhado à esquerda */
     }
 
     /* AJUSTE 3: Garante o alinhamento correto dos botões na base */
