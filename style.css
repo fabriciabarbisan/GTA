@@ -40,7 +40,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); /* Centralização perfeita independente da tela */
-    height: 85vh; /* Ocupa 85% da altura da tela do usuário, nunca mais que isso */
+    height: 70vh; /* Ocupa 85% da altura da tela do usuário, nunca mais que isso */
     max-height: 800px; /* Limite máximo para telas ultra-grandes */
     object-fit: contain;
     z-index: 2; /* Fica à frente do nome */
@@ -117,12 +117,13 @@ h1 {
     height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     
     /* AJUSTE 1: Aumenta o nome de fundo para ter o mesmo impacto do computador */
     .character-name {
-        font-size: 38vw; /* Faz a fonte ocupar quase toda a largura da tela do celular */
+        font-size: 43vw; /* Faz a fonte ocupar quase toda a largura da tela do celular */
         top: 8%;        /* Ajusta a altura para posicionar melhor no topo */
+        text-align: center;
     }
 
     /* AJUSTE 2: Move o texto de seleção para cima dos botões e centraliza tudo */
