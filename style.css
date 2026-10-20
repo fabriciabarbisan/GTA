@@ -40,7 +40,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); /* Centralização perfeita independente da tela */
-    height: 70vh; /* Ocupa 85% da altura da tela do usuário, nunca mais que isso */
+    height: 70vh; /* Ocupa 70% da altura da tela do usuário, nunca mais que isso */
     max-height: 800px; /* Limite máximo para telas ultra-grandes */
     object-fit: contain;
     z-index: 2; /* Fica à frente do nome */
