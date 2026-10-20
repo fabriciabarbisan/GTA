@@ -116,3 +116,33 @@ h1 {
     width: 40px;
     height: 40px;
 }
+
+@media (max-width: 768px) {
+    
+    /* AJUSTE 1: Aumenta o nome de fundo para ter o mesmo impacto do computador */
+    .character-name {
+        font-size: 38vw; /* Faz a fonte ocupar quase toda a largura da tela do celular */
+        top: 8%;        /* Ajusta a altura para posicionar melhor no topo */
+    }
+
+    /* AJUSTE 2: Move o texto de seleção para cima dos botões e centraliza tudo */
+    .texts {
+        bottom: 120px;       /* Joga o bloco de texto para cima dos botões */
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente no celular */
+        width: 90%;          /* Garante margens nas laterais da tela */
+        max-width: 100%;
+        text-align: center;  /* Centraliza os títulos e descrições */
+    }
+
+    /* AJUSTE 3: Garante o alinhamento correto dos botões na base */
+    .buttons {
+        bottom: 30px; /* Mantém os botões organizados bem na parte inferior */
+        gap: 15px;    /* Espaçamento ideal para telas de toque */
+    }
+    
+    /* AJUSTE OPCIONAL: Reduz sutilmente a personagem para dar mais respiro ao layout */
+    .character {
+        height: 75vh;
+    }
+}
